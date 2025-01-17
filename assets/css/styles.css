@@ -111,6 +111,10 @@ textarea {
   color: var(--first-color);
 }
 
+.section {
+  padding-block: 7rem;
+}
+
 /*=============== LAYOUT ===============*/
 .container {
   max-width: 1320px;
@@ -235,7 +239,51 @@ textarea {
 /*=============== MAIN ===============*/
 
 /*=============== HOME ===============*/
+.home-container {
+  padding-block: 4.25rem;
+}
 
+.home-content {
+  position: relative;
+}
+
+.home-subtitle {
+  font-size: var(--large-font-size);
+  font-weight: font=var(--font-semi-bold);
+  margin-bottom: 1rem;
+}
+
+.home-subtitle span,
+.home-title span {
+  color: var(--first-color);
+}
+
+.home-title {
+  color: var(--white-color);
+  font-size: var(--big-font-size);
+  font-weight: var(--font-black);
+  -webkit-text-stroke: 2px hsl(0, 0%, 0%);
+  text-shadow: 4px 4px var(--shadow-color);
+}
+
+.home-job {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-block: 1.5rem 2.5rem;
+}
+
+.home-banner {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.home-img-wrapper {
+  background-color: orangered;
+  width: clamp(10rem, 12.6rem + 33.6vw, 35rem);
+  border-radius: 0 0 100vw 100vw;
+}
 /*=============== SERVICES ===============*/
 
 /* Swiper */
