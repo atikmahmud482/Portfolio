@@ -44,6 +44,14 @@
 }
 
 /*=============== DARK THEME ===============*/
+.dark {
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 92%);
+  --body-color: hsl(var(--hue), 10%, 8%);
+  --container-color: hsl(var(--hue), 10%, 16%);
+  --border-color: hsl(var(--hue), 4%, 65%);
+  --shadow-color: hsla(var(--hue), 0%, 100%, 0.2);
+}
 
 /*=============== BASE ===============*/
 * {
@@ -455,12 +463,13 @@ textarea {
 .style-switcher {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   width: 450px;
   height: 100%;
   background-color: var(--container-color);
   padding: 5rem 0 0 3.5rem;
   z-index: 1000;
+  transition: right 1s var(--transition);
 }
 
 .style-switcher-title {
@@ -487,7 +496,60 @@ textarea {
   column-gap: 0.5rem;
 }
 
+.style-switcher-color {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: hsl(var(--hue), 60%, 40%);
+  position: relative;
+}
+
+.style-switcher-color i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white-color);
+  font-size: 1.25rem;
+  display: none;
+}
+
+.active-color i {
+  display: block;
+}
+
+.style-switcher-themes,
+.style-switcher-theme {
+  display: flex;
+}
+
+.style-switcher-themes {
+  column-gap: 1.25rem;
+}
+
+.style-switcher-theme {
+  column-gap: 0.5rem;
+}
+
+.style-switcher-input {
+  accent-color: var(--first-color);
+}
+
+.style-switcher-label {
+  color: var(--title-color);
+}
+
+.style-switcher-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5em;
+  font-size: 2rem;
+  cursor: pointer;
+}
 /* Show switcher */
+.show-switcher {
+  right: 0;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
