@@ -19,7 +19,7 @@
   --second-font: "Montserrat Alternates", sans-serif;
 
   /*========== Font sizes ==========*/
-  --big-font-size: 5.5rem;
+  --big-font-size: 4rem;
   --h1-font-size: 2.75rem;
   --h2-font-size: 1.75rem;
   --h3-font-size: 1.5rem;
@@ -299,6 +299,44 @@ textarea {
   z-index: 10;
   aspect-ratio: 21/25;
   object-fit: cover;
+}
+
+.home-data {
+  border: 2px solid var(--border-color);
+  background-color: var(--container-color);
+  box-shadow: 4px 4px var(--shadow-color);
+  font-weight: var(--font-semi-bold);
+  padding-inline: 1.25rem;
+  width: 240px;
+  height: 80px;
+  border-radius: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+}
+
+.home-data-one {
+  bottom: 20%;
+  left: clamp(-3.75rem, -4.65rem + 3.6vw, -1.5rem);
+}
+
+.home-data-two {
+  bottom: 20%;
+  right: clamp(-3rem, -5.2rem + 8.8vw, 2.5rem);
+}
+
+.home-data-title span {
+  color: var(--first-color);
+}
+
+.home-data-no {
+  color: var(--title-color);
+  font-family: var(--second-font);
+  font-size: 2.25rem;
+  font-weight: var(--font-bold);
+  text-align: center;
 }
 /*=============== SERVICES ===============*/
 
