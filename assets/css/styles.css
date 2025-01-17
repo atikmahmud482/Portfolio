@@ -115,6 +115,45 @@ textarea {
   padding-block: 7rem;
 }
 
+.btn,
+.home-link {
+  display: inline-block;
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-bold);
+  position: relative;
+}
+
+.btn {
+  border: 2px solid var(--border-color);
+  box-shadow: 4px 4px var(--shadow-color);
+  padding: 1rem 2.5rem;
+  border-radius: 3rem;
+  transition: color 0.7s var(--transition);
+}
+
+.btn:hover {
+  color: var(--white-color);
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background-color: var(--first-color);
+  border-radius: inherit;
+  transform: scale(0.3);
+  filter: blur(10px);
+  opacity: 0;
+  z-index: -10;
+  transition: all 0.7s var(--transition);
+}
+
+.btn:hover::before {
+  transform: scale(1);
+  filter: blur(0);
+  opacity: 1;
+}
 /*=============== LAYOUT ===============*/
 .container {
   max-width: 1320px;
@@ -323,12 +362,8 @@ textarea {
 }
 
 .home-data-two {
-  bottom: 20%;
+  bottom: 12%;
   right: clamp(-3rem, -5.2rem + 8.8vw, 2.5rem);
-}
-
-.home-data-title span {
-  color: var(--first-color);
 }
 
 .home-data-no {
@@ -337,6 +372,66 @@ textarea {
   font-size: 2.25rem;
   font-weight: var(--font-bold);
   text-align: center;
+}
+
+.home-data-title {
+  font-size: var(--small-font-size);
+}
+
+.home-data-title span {
+  color: var(--first-color);
+}
+
+.shape {
+  position: absolute;
+  z-index: -10;
+}
+
+.shape-1 {
+  width: clamp(6.5rem, 3.5rem + 12vw, 14rem);
+  top: 9%;
+  right: 6%;
+}
+
+.shape-2,
+.shape-3 {
+  width: clamp(4rem, 2.2rem + 7.2vw, 8.5rem);
+}
+
+.shape-2 {
+  bottom: 8%;
+  left: -12%;
+}
+
+.shape-3 {
+  bottom: 0;
+  right: -2%;
+}
+
+.home-description {
+  font-size: var(--large-font-size);
+  max-width: 520px;
+}
+
+.home-socials {
+  margin-block: 1.7rem 2.5rem;
+}
+
+.home-btns {
+  display: flex;
+  align-items: center;
+  column-gap: 4.5rem;
+}
+
+.home-link::before {
+  content: "";
+  position: absolute;
+  left: -124%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 2px;
+  background-color: var(--border-color);
 }
 /*=============== SERVICES ===============*/
 
