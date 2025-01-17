@@ -53,6 +53,9 @@
   --shadow-color: hsla(var(--hue), 0%, 100%, 0.2);
 }
 
+.dark .shape {
+  filter: invert(1);
+}
 /*=============== BASE ===============*/
 * {
   margin: 0;
@@ -242,7 +245,7 @@ textarea {
   position: fixed;
   top: 0;
   right: -100%;
-  border-color: var(--container-color);
+  background-color: var(--container-color);
   width: 512px;
   height: 100%;
   padding: 9rem 0 0 9.5rem;
