@@ -452,6 +452,40 @@ textarea {
 /*=============== FOOTER ===============*/
 
 /*=============== STYLE SWITCHER ===============*/
+.style-switcher {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 450px;
+  height: 100%;
+  background-color: var(--container-color);
+  padding: 5rem 0 0 3.5rem;
+  z-index: 1000;
+}
+
+.style-switcher-title {
+  font-size: var(--h3-font-size);
+  padding-bottom: 1.25rem;
+}
+
+.style-switcher-title,
+.style-switcher-item {
+  border-radius: 1px solid var(--shadow-color);
+}
+
+.style-switcher-item {
+  padding-block: 1rem;
+}
+
+.style-switcher-subtitle {
+  font-size: var(--large-font-size);
+  margin-bottom: 1rem;
+}
+
+.style-switcher-colors {
+  display: flex;
+  column-gap: 0.5rem;
+}
 
 /* Show switcher */
 
