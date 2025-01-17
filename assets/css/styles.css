@@ -280,9 +280,25 @@ textarea {
 }
 
 .home-img-wrapper {
-  background-color: orangered;
-  width: clamp(10rem, 12.6rem + 33.6vw, 35rem);
+  width: clamp(21rem, 12.6rem + 33.6vw, 42rem);
   border-radius: 0 0 100vw 100vw;
+  overflow: hidden;
+}
+
+.home-img-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--first-color);
+}
+
+.home-profile {
+  position: relative;
+  z-index: 10;
+  aspect-ratio: 21/25;
+  object-fit: cover;
 }
 /*=============== SERVICES ===============*/
 
