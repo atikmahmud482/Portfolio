@@ -15,6 +15,22 @@ navToggle.addEventListener("click", () => {
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 /*=============== SERVICES SWIPER ===============*/
+var servicesSwiper = new Swiper(".services-swiper", {
+  spaceBetween: 32,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1208: {
+      slidesPerView: 3,
+    },
+  },
+});
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
