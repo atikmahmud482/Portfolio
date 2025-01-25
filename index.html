@@ -357,14 +357,14 @@
 
         <div class="container">
           <ul class="work-list">
-            <li class="work-item active-work">ALL</li>
-            <li class="work-item">Photography</li>
-            <li class="work-item">Development</li>
-            <li class="work-item">Branding</li>
+            <li class="work-item active-work" data-filter="all">ALL</li>
+            <li class="work-item" data-filter=".photography">Photography</li>
+            <li class="work-item" data-filter=".development">Development</li>
+            <li class="work-item" data-filter=".branding">Branding</li>
           </ul>
 
           <div class="work-container grid">
-            <div class="mix">
+            <div class="mix branding">
               <div class="card">
                 <img src="assets/img/project1.jpeg" alt="" class="work-img" />
                 <h4 class="work-category">Branding</h4>
@@ -381,7 +381,7 @@
               </div>
             </div>
 
-            <div class="mix">
+            <div class="mix development">
               <div class="card">
                 <img src="assets/img/project2.jpg" alt="" class="work-img" />
                 <h4 class="work-category">Development</h4>
@@ -398,7 +398,7 @@
               </div>
             </div>
 
-            <div class="mix">
+            <div class="mix photography">
               <div class="card">
                 <img src="assets/img/project3.jpeg" alt="" class="work-img" />
                 <h4 class="work-category">Photography</h4>
@@ -415,7 +415,7 @@
               </div>
             </div>
 
-            <div class="mix">
+            <div class="mix photography">
               <div class="card">
                 <img src="assets/img/project4.jpeg" alt="" class="work-img" />
                 <h4 class="work-category">Photography</h4>
@@ -432,7 +432,7 @@
               </div>
             </div>
 
-            <div class="mix">
+            <div class="mix development">
               <div class="card">
                 <img src="assets/img/project5.jpeg" alt="" class="work-img" />
                 <h4 class="work-category">Development</h4>
@@ -449,7 +449,7 @@
               </div>
             </div>
 
-            <div class="mix">
+            <div class="mix branding">
               <div class="card">
                 <img src="assets/img/project6.jpg" alt="" class="work-img" />
                 <h4 class="work-category">Branding</h4>
@@ -547,6 +547,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!--=============== MIXITUP ===============-->
+    <script src="/assets/js/mixitup.min.js"></script>
 
     <!--=============== EMAIL JS ===============-->
 
