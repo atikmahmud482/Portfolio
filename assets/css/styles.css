@@ -786,7 +786,49 @@ textarea {
   margin-block: 2rem 0.25rem;
 }
 /*=============== CONTACT ===============*/
+.contact {
+  padding-bottom: 14rem;
+}
 
+.contact-container {
+  grid-template-columns: 5fr 7fr;
+  column-gap: 1.5rem;
+}
+
+.contact-card {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  column-gap: 4.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact-icon,
+.contact-form-input {
+  border: 2px solid var(--border-color);
+  background-color: var(--container-color);
+}
+
+.contact-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  box-shadow: 4px 4px var(--shadow-color);
+  font-size: var(--h3-font-size);
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.contact-icon ::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  width: 40px;
+  height: 2px;
+  background-color: var(--border-color);
+}
 /*=============== FOOTER ===============*/
 
 /*=============== STYLE SWITCHER ===============*/
