@@ -788,6 +788,7 @@ textarea {
 /*=============== CONTACT ===============*/
 .contact {
   padding-bottom: 14rem;
+  position: relative;
 }
 
 .contact-container {
@@ -828,6 +829,68 @@ textarea {
   width: 40px;
   height: 2px;
   background-color: var(--border-color);
+}
+
+.contact-title {
+  font-size: var(--h3-font-size);
+  margin-block: 0.5rem;
+}
+
+.contact-form {
+  row-gap: 1.75rem;
+}
+
+.contact-form-group {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+.contact-form-div {
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.contact-form-label {
+  text-align: 1.75rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-bold);
+}
+
+.contact-form-label b {
+  color: var(--first-color);
+}
+
+.contact-form-input {
+  padding: 1rem 1.75rem;
+  border-radius: 1.75rem;
+}
+
+.contact-form-area {
+  resize: none;
+  height: 140px;
+}
+
+.contact-submit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem 2rem;
+}
+
+.massage {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 1.25rem;
+  font-weight: var(--font-medium);
+}
+
+.color-red {
+  color: hsl(5, 69%, 51%);
+}
+
+.color-first {
+  color: var(--first-color);
 }
 /*=============== FOOTER ===============*/
 

@@ -785,12 +785,13 @@
               </div>
             </div>
           </div>
-          <form action="" class="contact-form grid">
-            <div class="contact-form-group">
+          <form action="" class="contact-form grid" id="contact-form">
+            <div class="contact-form-group grid">
               <div class="contact-form-div">
                 <label for="" class="contact-form-label">Your full Name <b>*</b></label>
                 <input 
                 type="text" 
+                name="name"
                 class="contact-form-input"
                 id="contact-name"
                 />
@@ -800,6 +801,7 @@
                 <label for="" class="contact-form-label">Your Email Address<b>*</b></label>
                 <input 
                 type="email" 
+                name="email"
                 class="contact-form-input"
                 id="contact-email"
                 />
@@ -810,6 +812,7 @@
               <label for="" class="contact-form-label">Your Subject <b>*</b></label>
               <input 
               type="text" 
+              name="subject"
               class="contact-form-input"
               id="contact-subject"
               />
@@ -818,7 +821,7 @@
             <div class="contact-form-div">
               <label for="" class="contact-form-label">Your Message<b>*</b></label>
               <textarea
-             
+              name="massage"
               class="contact-form-input contact-form-area"
               id="contact-massage"
               ></textarea>
@@ -828,7 +831,7 @@
               <span>* Accept the terms and conditions.</span>
               <button type="submit" class="btn"> Send Massage</button>
             </div>
-            <p class="massage"></p>
+            <p id="massage"></p>
           </form>
         </div>
       </section>
@@ -908,6 +911,9 @@
     <script src="/assets/js/mixitup.min.js"></script>
 
     <!--=============== EMAIL JS ===============-->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
 
     <!--=============== JS ===============-->
     <script src="/assets/js/main.js"></script>

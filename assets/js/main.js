@@ -101,6 +101,58 @@ var servicesSwiper = new Swiper(".testimonials-swiper", {
 });
 
 /*=============== EMAIL JS ===============*/
+const contactForm = document.getElementById("contact-form"),
+  contactName = document.getElementById("contact-name"),
+  contactEmail = document.getElementById("contact-email"),
+  contactSubject = document.getElementById("contact-subject"),
+  contactMassage = document.getElementById("contact-massage"),
+  massage = document.getElementById("massage");
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  if (
+    contactName.value === "" ||
+    contactEmail.value === "" ||
+    contactSubject.value === "" ||
+    contactMassage.value === ""
+  ) {
+    massage.classList.remove("color-first");
+    massage.classList.add("color-red");
+    massage.textContent = "Write all the input fields";
+
+    setTimeout(() => {
+      massage.textContent = "";
+    }, 3000);
+  } else {
+    emailjs
+      .sendForm(
+        "service_3osga7s",
+        "template_4pg2dtq",
+        "#contact-form",
+        "9t_ex-5KC6dAU5U5W"
+      )
+      .then(
+        () => {
+          massage.classList.add("color-first");
+          massage.textContent = "Message sent ✔";
+
+          setTimeout(() => {
+            massage.textContent = "";
+          }, 5000);
+        },
+        (error) => {
+          alert("OOPs! SOMETHING WENT WRONG...", error);
+        }
+      );
+    contactName.value = "";
+    contactEmail.value = "";
+    contactSubject.value = "";
+    contactMassage.value = "";
+  }
+};
+
+contactForm.addEventListener("submit", sendEmail);
 
 /*=============== STYLE SWITCHER ===============*/
 const styleSwitcher = document.getElementById("style-switcher"),
