@@ -909,11 +909,9 @@ textarea {
   font-size: var(--small-font-size);
   font-weight: var(--font-bold);
 }
-
 .footer-copyright span {
   color: var(--first-color);
 }
-
 /*=============== STYLE SWITCHER ===============*/
 .style-switcher {
   position: fixed;
