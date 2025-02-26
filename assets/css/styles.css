@@ -1093,8 +1093,52 @@ textarea {
 }
 
 @media screen and (max-width: 1024px) {
-}
+  .nav {
+    height: 4rem;
+  }
 
+  .section {
+    padding-block: 6rem 1rem;
+  }
+
+  .home-container {
+    padding-bottom: 2rem;
+  }
+
+  .home-title {
+    text-shadow: 2px 2px var(--shadow-color);
+  }
+
+  .home-data {
+    transform: scale(0.8);
+  }
+
+  .swiper-pagination-bullets::before {
+    top: 11.5px;
+  }
+
+  .resume-container {
+    grid-template-columns: fit-content(550px);
+    justify-content: center;
+    row-gap: 2.5rem;
+  }
+
+  .contact-container,
+  .contact-form-group {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-container {
+    row-gap: 1.5rem;
+  }
+
+  .contact-form,
+  .contact-content {
+    max-width: 550px;
+    width: 100%;
+    margin-inline: auto;
+  }
+}
 /* For medium devices */
 @media screen and (max-width: 768px) {
 }
