@@ -1141,6 +1141,49 @@ textarea {
 }
 /* For medium devices */
 @media screen and (max-width: 768px) {
+  .nav-menu,
+  .style-switcher {
+    width: 100%;
+  }
+
+  .nav-buttons {
+    column-gap: 1.5rem;
+  }
+
+  .home-data {
+    transform: scale(0.7);
+  }
+
+  .services-swiper,
+  .testimonial-swiper {
+    max-width: 420px;
+  }
+
+  .swiper-pagination-bullets::before {
+    width: 120px;
+  }
+
+  .skills-container {
+    grid-template-columns: fit-content(550px);
+  }
+
+  .skills-container,
+  .work-container {
+    justify-content: center;
+  }
+
+  .work-list {
+    column-gap: 2rem;
+  }
+
+  .work-container {
+    grid-template-columns: fit-content(420px);
+  }
+
+  .footer-container {
+    flex-direction: column;
+    row-gap: 1.25rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
